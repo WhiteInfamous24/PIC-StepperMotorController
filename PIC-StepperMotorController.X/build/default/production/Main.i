@@ -2528,8 +2528,8 @@ setup:
     MOVWF TRISD
 
     ; general port configuration
-    BANKSEL OPTION_REG ; enable global pull-ups and set pre-scaler (101)
-    MOVLW 0b00000101 ; | /RBPU | ((OPTION_REG) and 07Fh), 6 | ((OPTION_REG) and 07Fh), 5 | ((OPTION_REG) and 07Fh), 4 | ((OPTION_REG) and 07Fh), 3 | ((OPTION_REG) and 07Fh), 2 | ((OPTION_REG) and 07Fh), 1 | ((OPTION_REG) and 07Fh), 0 |
+    BANKSEL OPTION_REG ; enable global pull-ups and set pre-scaler (011)
+    MOVLW 0b00000011 ; | /RBPU | ((OPTION_REG) and 07Fh), 6 | ((OPTION_REG) and 07Fh), 5 | ((OPTION_REG) and 07Fh), 4 | ((OPTION_REG) and 07Fh), 3 | ((OPTION_REG) and 07Fh), 2 | ((OPTION_REG) and 07Fh), 1 | ((OPTION_REG) and 07Fh), 0 |
     MOVWF OPTION_REG
     BANKSEL WPUB
     MOVLW 0b00001111 ; enable pull-ups in <((PORTB) and 07Fh), 0:((PORTB) and 07Fh), 3> pins
@@ -2580,7 +2580,7 @@ main:
 TMR0ISR:
     BANKSEL TMR0
     CLRF TMR0 ; reset TMR0
-    INCF TMR0_CNTR ; increment TMR0 counter variable
+    INCF TMR0_CNTR, F ; increment TMR0 counter variable
     CALL blinkRD0
     BCF INTCON, 2 ; clear ((INTCON) and 07Fh), 2 bit
     RETURN
