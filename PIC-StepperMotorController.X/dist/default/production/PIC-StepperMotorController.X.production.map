@@ -7,7 +7,7 @@ Linker command line:
   -cs \
   -h+dist/default/production\PIC-StepperMotorController.X.production.sym \
   --cmf=dist/default/production\PIC-StepperMotorController.X.production.cmf \
-  -z -Q16F887 -oC:\Users\juanm\AppData\Local\Temp\xcAs5p8.\driver_tmp_3.o \
+  -z -Q16F887 -oC:\Users\juanm\AppData\Local\Temp\xcAsgls.\driver_tmp_3.o \
   -pRESET_VECT=0h -pINT_VECT=4h --fixupoverflow=error \
   -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/production/PIC-StepperMotorController.X.production.map -E1 \

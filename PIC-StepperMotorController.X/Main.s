@@ -80,7 +80,7 @@ setup:
     MOVWF   TRISD
     
     ; general port configuration
-    BANKSEL OPTION_REG		; enable global pull-ups and set pre-scaler (011)
+    BANKSEL OPTION_REG		; enable global pull-ups and set pre-scaler (011) 
     MOVLW   0b00000011		; | /RBPU | INTEDG | T0CS | T0SE | PSA | PS2 | PS1 | PS0 |
     MOVWF   OPTION_REG
     BANKSEL WPUB
