@@ -2491,7 +2491,6 @@ INT_VECT:
     MOVWF STATUS
     SWAPF W_TMP, F
     SWAPF W_TMP, W
-
     RETFIE
 
 ; program variables
@@ -2528,7 +2527,7 @@ setup:
     MOVWF TRISD
 
     ; general port configuration
-    BANKSEL OPTION_REG ; enable global pull-ups and set pre-scaler (011)
+    BANKSEL OPTION_REG ; enable global pull-ups and set pre-scaler (100)
     MOVLW 0b00000100 ; | /RBPU | ((OPTION_REG) and 07Fh), 6 | ((OPTION_REG) and 07Fh), 5 | ((OPTION_REG) and 07Fh), 4 | ((OPTION_REG) and 07Fh), 3 | ((OPTION_REG) and 07Fh), 2 | ((OPTION_REG) and 07Fh), 1 | ((OPTION_REG) and 07Fh), 0 |
     MOVWF OPTION_REG
     BANKSEL WPUB
