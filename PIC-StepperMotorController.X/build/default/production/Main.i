@@ -2529,7 +2529,7 @@ setup:
 
     ; general port configuration
     BANKSEL OPTION_REG ; enable global pull-ups and set pre-scaler (011)
-    MOVLW 0b00000011 ; | /RBPU | ((OPTION_REG) and 07Fh), 6 | ((OPTION_REG) and 07Fh), 5 | ((OPTION_REG) and 07Fh), 4 | ((OPTION_REG) and 07Fh), 3 | ((OPTION_REG) and 07Fh), 2 | ((OPTION_REG) and 07Fh), 1 | ((OPTION_REG) and 07Fh), 0 |
+    MOVLW 0b00000100 ; | /RBPU | ((OPTION_REG) and 07Fh), 6 | ((OPTION_REG) and 07Fh), 5 | ((OPTION_REG) and 07Fh), 4 | ((OPTION_REG) and 07Fh), 3 | ((OPTION_REG) and 07Fh), 2 | ((OPTION_REG) and 07Fh), 1 | ((OPTION_REG) and 07Fh), 0 |
     MOVWF OPTION_REG
     BANKSEL WPUB
     MOVLW 0b00001111 ; enable pull-ups in <((PORTB) and 07Fh), 0:((PORTB) and 07Fh), 3> pins
