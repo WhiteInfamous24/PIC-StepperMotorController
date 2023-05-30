@@ -7,7 +7,7 @@ Linker command line:
   -cs \
   -h+dist/default/production\PIC-StepperMotorController.X.production.sym \
   --cmf=dist/default/production\PIC-StepperMotorController.X.production.cmf \
-  -z -Q16F887 -oC:\Users\juanm\AppData\Local\Temp\xcAs2j8.\driver_tmp_3.o \
+  -z -Q16F887 -oC:\Users\juanm\AppData\Local\Temp\xcAsi90.\driver_tmp_3.o \
   -pRESET_VECT=0h -pINT_VECT=4h --fixupoverflow=error \
   -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/production/PIC-StepperMotorController.X.production.map -E1 \
@@ -30,12 +30,12 @@ Machine type is 16F887
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/production/Main.o
                 config                             2007     2007        2        0       4
-                INT_VECT                              4        4       D3        8       0
+                INT_VECT                              4        4       D4        8       0
                 RESET_VECT                            0        0        1        0       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                INT_VECT                              4        4       D3         0
+                INT_VECT                              4        4       D4         0
                 RESET_VECT                            0        0        1         0
 
         CLASS   STRCODE        
@@ -80,7 +80,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 RESET_VECT                     000000  000001  000001         0       0  CODE        2
-                INT_VECT                       000004  0000D3  0000D7         8       0  CODE        2
+                INT_VECT                       000004  0000D4  0000D8         8       0  CODE        2
 
 
 UNUSED ADDRESS RANGES
@@ -91,13 +91,13 @@ UNUSED ADDRESS RANGES
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
         CODE             0001-0003              3           2
-                         00D7-1FFF            800
+                         00D8-1FFF            800
         COMMON           0070-007F             10           1
         CONST            0001-0003              3           2
-                         00D7-1FFF            100
+                         00D8-1FFF            100
         EEDATA           2100-21FF            100           2
         ENTRY            0001-0003              3           2
-                         00D7-1FFF            100
+                         00D8-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0020-006F             50           1
                          00A0-00EF             50
@@ -105,28 +105,28 @@ UNUSED ADDRESS RANGES
                          0190-01EF             60
         SFR0             0002-0007              6           1
         STRCODE          0001-0003              3           2
-                         00D7-1FFF           1F29
+                         00D8-1FFF           1F28
         STRING           0001-0003              3           2
-                         00D7-1FFF            100
+                         00D8-1FFF            100
 
                                   Symbol Table
 
-__HINT_VECT     INT_VECT     00D7  __HRESET_VECT   RESET_VECT   0001
-__H__absolute__ __absolute__ 0000  __Hcode         code         01AE
-__Hconfig       config       2009  __Hdata         data         01AE
-__Hedata        edata        01AE  __Hspace_0      (abs)        01AE
+__HINT_VECT     INT_VECT     00D8  __HRESET_VECT   RESET_VECT   0001
+__H__absolute__ __absolute__ 0000  __Hcode         code         01B0
+__Hconfig       config       2009  __Hdata         data         01B0
+__Hedata        edata        01B0  __Hspace_0      (abs)        01B0
 __Hspace_1      (abs)        0000  __Hspace_3      (abs)        0000
-__Hspace_4      (abs)        4010  __Hudata        udata        01AE
-__Hudata_bank0  udata_bank0  01AE  __Hudata_bank1  udata_bank1  01AE
-__Hudata_bank2  udata_bank2  01AE  __Hudata_bank3  udata_bank3  01AE
-__Hudata_shr    udata_shr    01AE  __LINT_VECT     INT_VECT     0004
+__Hspace_4      (abs)        4010  __Hudata        udata        01B0
+__Hudata_bank0  udata_bank0  01B0  __Hudata_bank1  udata_bank1  01B0
+__Hudata_bank2  udata_bank2  01B0  __Hudata_bank3  udata_bank3  01B0
+__Hudata_shr    udata_shr    01B0  __LINT_VECT     INT_VECT     0004
 __LRESET_VECT   RESET_VECT   0000  __L__absolute__ __absolute__ 0000
-__Lcode         code         01AE  __Lconfig       config       0000
-__Ldata         data         01AE  __Ledata        edata        01AE
+__Lcode         code         01B0  __Lconfig       config       0000
+__Ldata         data         01B0  __Ledata        edata        01B0
 __Lspace_0      (abs)        0000  __Lspace_1      (abs)        0000
 __Lspace_3      (abs)        0000  __Lspace_4      (abs)        0000
-__Ludata        udata        01AE  __Ludata_bank0  udata_bank0  01AE
-__Ludata_bank1  udata_bank1  01AE  __Ludata_bank2  udata_bank2  01AE
-__Ludata_bank3  udata_bank3  01AE  __Ludata_shr    udata_shr    01AE
+__Ludata        udata        01B0  __Ludata_bank0  udata_bank0  01B0
+__Ludata_bank1  udata_bank1  01B0  __Ludata_bank2  udata_bank2  01B0
+__Ludata_bank3  udata_bank3  01B0  __Ludata_shr    udata_shr    01B0
 __S0            (abs)        0000  __S1            (abs)        0000
 __S3            (abs)        0000  

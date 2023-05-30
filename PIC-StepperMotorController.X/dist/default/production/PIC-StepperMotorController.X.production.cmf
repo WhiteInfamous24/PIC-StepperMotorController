@@ -13,7 +13,7 @@
 %PSECTS
 $build/default/production/Main.o
 RESET_VECT CODE 0 0 0 1 2 1
-INT_VECT CODE 0 4 4 D3 2 1
+INT_VECT CODE 0 4 4 D4 2 1
 config CONFIG 4 2007 2007 2 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -30,19 +30,19 @@ BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 1-3 2
-CONST D7-1FFF 2
+CONST D8-1FFF 2
 ENTRY 1-3 2
-ENTRY D7-1FFF 2
+ENTRY D8-1FFF 2
 IDLOC 2000-2003 2
 CODE 1-3 2
-CODE D7-1FFF 2
+CODE D8-1FFF 2
 SFR0 2-7 1
 COMMON 70-7F 1
 EEDATA 2100-21FF 2
 STRCODE 1-3 2
-STRCODE D7-1FFF 2
+STRCODE D8-1FFF 2
 STRING 1-3 2
-STRING D7-1FFF 2
+STRING D8-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -217,42 +217,43 @@ AF INT_VECT CODE >290:D:\Documents\GitHub\PIC-StepperMotorController\PIC-Stepper
 B0 INT_VECT CODE >291:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B1 INT_VECT CODE >292:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B2 INT_VECT CODE >293:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-B3 INT_VECT CODE >299:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+B3 INT_VECT CODE >294:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B4 INT_VECT CODE >300:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-B5 INT_VECT CODE >303:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+B5 INT_VECT CODE >301:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B6 INT_VECT CODE >304:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B7 INT_VECT CODE >305:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B8 INT_VECT CODE >306:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 B9 INT_VECT CODE >307:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-BA INT_VECT CODE >313:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+BA INT_VECT CODE >308:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 BB INT_VECT CODE >314:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-BC INT_VECT CODE >317:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-BD INT_VECT CODE >320:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+BC INT_VECT CODE >315:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+BD INT_VECT CODE >318:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 BE INT_VECT CODE >321:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 BF INT_VECT CODE >322:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-C0 INT_VECT CODE >326:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+C0 INT_VECT CODE >323:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 C1 INT_VECT CODE >327:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 C2 INT_VECT CODE >328:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-C3 INT_VECT CODE >332:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+C3 INT_VECT CODE >329:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 C4 INT_VECT CODE >333:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 C5 INT_VECT CODE >334:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-C6 INT_VECT CODE >338:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+C6 INT_VECT CODE >335:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 C7 INT_VECT CODE >339:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 C8 INT_VECT CODE >340:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-C9 INT_VECT CODE >344:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+C9 INT_VECT CODE >341:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 CA INT_VECT CODE >345:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 CB INT_VECT CODE >346:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-CC INT_VECT CODE >350:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+CC INT_VECT CODE >347:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 CD INT_VECT CODE >351:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 CE INT_VECT CODE >352:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-CF INT_VECT CODE >356:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+CF INT_VECT CODE >353:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 D0 INT_VECT CODE >357:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 D1 INT_VECT CODE >358:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-D2 INT_VECT CODE >362:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+D2 INT_VECT CODE >359:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 D3 INT_VECT CODE >363:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 D4 INT_VECT CODE >364:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
-D5 INT_VECT CODE >368:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+D5 INT_VECT CODE >365:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 D6 INT_VECT CODE >369:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
+D7 INT_VECT CODE >370:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 0 RESET_VECT CODE >22:D:\Documents\GitHub\PIC-StepperMotorController\PIC-StepperMotorController.X\Main.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
@@ -266,28 +267,28 @@ D6 INT_VECT CODE >369:D:\Documents\GitHub\PIC-StepperMotorController\PIC-Stepper
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 1AE 0 ABS 0 - -
+__Hspace_0 1B0 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
-__Hudata_bank0 1AE 0 ABS 0 udata_bank0 -
-__Hudata_bank1 1AE 0 ABS 0 udata_bank1 -
-__Hudata_bank2 1AE 0 ABS 0 udata_bank2 -
-__Hudata_bank3 1AE 0 ABS 0 udata_bank3 -
+__Hudata_bank0 1B0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 1B0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 1B0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 1B0 0 ABS 0 udata_bank3 -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
 __LINT_VECT 8 0 CODE 0 INT_VECT -
-__HINT_VECT 1AE 0 CODE 0 INT_VECT -
+__HINT_VECT 1B0 0 CODE 0 INT_VECT -
 __HRESET_VECT 2 0 CODE 0 RESET_VECT -
-__Hedata 1AE 0 ABS 0 edata -
-__Hudata 1AE 0 ABS 0 udata -
+__Hedata 1B0 0 ABS 0 edata -
+__Hudata 1B0 0 ABS 0 udata -
 __Hconfig 4012 0 CONFIG 4 config -
-__Ledata 1AE 0 ABS 0 edata -
-__Ludata 1AE 0 ABS 0 udata -
-__Hcode 1AE 0 ABS 0 code -
-__Hdata 1AE 0 ABS 0 data -
+__Ledata 1B0 0 ABS 0 edata -
+__Ludata 1B0 0 ABS 0 udata -
+__Hcode 1B0 0 ABS 0 code -
+__Hdata 1B0 0 ABS 0 data -
 __LRESET_VECT 0 0 CODE 0 RESET_VECT -
-__Lcode 1AE 0 ABS 0 code -
-__Ldata 1AE 0 ABS 0 data -
+__Lcode 1B0 0 ABS 0 code -
+__Ldata 1B0 0 ABS 0 data -
 __S0 0 0 ABS 0 - -
 __S1 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
@@ -296,13 +297,13 @@ __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__Ludata_bank0 1AE 0 ABS 0 udata_bank0 -
-__Ludata_bank1 1AE 0 ABS 0 udata_bank1 -
-__Ludata_bank2 1AE 0 ABS 0 udata_bank2 -
-__Ludata_bank3 1AE 0 ABS 0 udata_bank3 -
+__Ludata_bank0 1B0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 1B0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 1B0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 1B0 0 ABS 0 udata_bank3 -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
-__Hudata_shr 1AE 0 ABS 0 udata_shr -
-__Ludata_shr 1AE 0 ABS 0 udata_shr -
+__Hudata_shr 1B0 0 ABS 0 udata_shr -
+__Ludata_shr 1B0 0 ABS 0 udata_shr -
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -328,7 +329,7 @@ __Ludata_shr 1AE 0 ABS 0 udata_shr -
 # All other numeric quantities are in decimal.
 %SEGMENTS
 RESET_VECT 0 0 0 1 2
-INT_VECT 0 4 8 D3 2
+INT_VECT 0 4 8 D4 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

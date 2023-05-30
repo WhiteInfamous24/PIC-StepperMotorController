@@ -70,7 +70,7 @@ setup:
     
     ; PORTC configuration
     BANKSEL TRISC
-    MOVLW   0b00000000		; set <RC0:RC7> PORTC pins as outputs to control LEDs
+    MOVLW   0b00000000		; set <RC0:RC7> PORTC pins as outputs to control LEDs and stepper motors
     MOVWF   TRISC
     
     ; PORTD configuration
@@ -273,23 +273,24 @@ moveStepperMotor:
 	CALL	getDelay
 	BSF	PORTC, 1	; set pulse in HIGH
 	CALL	getDelay
-	BCF	PORTC, 0	; set pulse in LOW
+	BCF	PORTC, 1	; set pulse in LOW
 	RETURN
     
     ; rotate one step down
     rotateDown:
-	BCF	PORTC, 1	; set direction in LOW
+	BCF	PORTC, 0	; set direction in LOW
 	CALL	getDelay
 	BSF	PORTC, 1	; set pulse in HIGH
 	CALL	getDelay
-	BCF	PORTC, 0	; set pulse in LOW
+	BCF	PORTC, 1	; set pulse in LOW
 	RETURN
     
     ; no rotation
     stopRotation:
 	BCF	PORTC, 0	; set direction in LOW
 	CALL	getDelay
-	BCF	PORTC, 0	; set pulse in LOW
+	BCF	PORTC, 1	; set pulse in LOW
+	CALL	getDelay
 	RETURN
 
 ; subroutine to make a delay
